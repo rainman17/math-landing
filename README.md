@@ -2,7 +2,7 @@
 
 Упрощённая версия сайта курса «Мысли как математик» без сервера и базы данных: HTML, CSS и немного JavaScript. Заявки уходят в Google-форму.
 
-Полная версия с админкой и обработкой заявок — ветка `main`. Исходные документы проекта (ТЗ, путь пользователя, макеты, план) — [`docs/requirements/`](docs/requirements/).
+Полная версия с админкой, базой и обработкой заявок (Next.js + Payload) — ветка `full`. Исходные документы проекта (ТЗ, путь пользователя, макеты, план) — [`docs/requirements/`](docs/requirements/).
 
 ## Как запустить
 
@@ -11,16 +11,17 @@
 - **Node.js 18 или новее.** Проверить: `node -v`. Установить: [nodejs.org](https://nodejs.org) или `brew install node`.
 - `npm install` для запуска **не нужен**: зависимостей нет, они нужны только для тестов.
 
-### 2. Открыть статическую версию
+### 2. Получить код
 
-Статика лежит в ветке `static-landing` того же репозитория, что и полная версия:
+Статика — основная ветка `main` репозитория [rainman17/math-landing](https://github.com/rainman17/math-landing):
 
 ```bash
-cd ~/Desktop/site/landing
-git checkout static-landing
+git clone git@github.com:rainman17/math-landing.git
+cd math-landing
 ```
 
-В ветке `main` этих файлов нет — там полная версия с бэкендом.
+Если репозиторий уже скачан — `cd ~/Desktop/site/math-landing && git checkout main && git pull`.
+Полная версия с бэкендом — в ветке `full`.
 
 ### 3. Запустить
 
@@ -53,7 +54,7 @@ kill $(lsof -tiTCP:4173 -sTCP:LISTEN)
 | Проблема | Что делать |
 |---|---|
 | `EADDRINUSE: address already in use` | Порт 4173 занят. Остановите старый сервер командой выше или запустите на другом порту: `node scripts/serve.mjs 5000` (с телефона — `node scripts/serve.mjs 5000 --lan`) |
-| `npm start` запускает Next.js, ругается на сборку, или в папке нет `index.html` | Открыта ветка `main` с полной версией. Переключитесь: `git checkout static-landing` |
+| `npm start` запускает Next.js, ругается на сборку, или в папке нет `index.html` | Открыта ветка `full` с полной версией. Переключитесь: `git checkout main` |
 | С телефона не открывается | Компьютер и телефон должны быть в одной сети; запуск именно через `npm run start:lan`; проверьте разрешение для `node` в «Системные настройки → Сеть → Файрвол» |
 | Нет Node.js | Подойдёт любой статический сервер, например `python3 -m http.server 4173` (своя страница 404 работать не будет) |
 
