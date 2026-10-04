@@ -18,6 +18,7 @@ const FIELDS = {
 
 /** Подменяет config.js настроенной формой и перехватывает отправку в Google. */
 async function configureForm(page, { fail = false } = {}) {
+  // Тесты никогда не отправляют данные в настоящую форму: запросы к Google перехватываются.
   const sent = []
   await page.route('**/assets/js/config.js', (route) =>
     route.fulfill({
@@ -39,6 +40,12 @@ async function configureForm(page, { fail = false } = {}) {
   })
   return sent
 }
+
+// Страховка: ни один тест не должен отправлять данные в настоящую форму.
+// Тесты, которым нужна отправка, ставят свой перехват поверх этого (новый обработчик приоритетнее).
+test.beforeEach(async ({ page }) => {
+  await page.route('https://docs.google.com/**', (route) => route.abort())
+})
 
 async function fillValid(page) {
   await page.fill('#parentName', 'Анна')
@@ -86,6 +93,12 @@ test('ошибки у полей, фокус на первом, введённо
 })
 
 test('без настроенной формы заявка не уходит и показывается подсказка', async ({ page }) => {
+  await page.route('**/assets/js/config.js', (route) =>
+    route.fulfill({
+      contentType: 'text/javascript',
+      body: `window.MKM_CONFIG = { googleForm: { action: 'https://docs.google.com/forms/d/e/ЗАМЕНИТЬ_ID_ФОРМЫ/formResponse', fields: { parentName: 'entry.0000000001' } } }`,
+    }),
+  )
   let requests = 0
   await page.route('https://docs.google.com/**', (route) => {
     requests++
@@ -168,4 +181,12 @@ test('мобильное меню и закреплённая кнопка', asy
   await page.locator('#mobile-menu').getByRole('link', { name: 'Уровни' }).click()
   await expect(page.locator('#mobile-menu')).toBeHidden()
   await expect(page.locator('.sticky-cta')).toHaveClass(/is-visible/)
+})
+
+test('в config.js подключена настоящая форма', async ({ page }) => {
+  await page.goto('/')
+  expect(await page.evaluate(() => window.__mkm.formConfigured())).toBe(true)
+  const fields = await page.evaluate(() => window.MKM_CONFIG.googleForm.fields)
+  expect(Object.keys(fields)).toHaveLength(11)
+  expect(new Set(Object.values(fields)).size).toBe(11)
 })

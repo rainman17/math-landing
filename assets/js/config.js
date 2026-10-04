@@ -3,20 +3,21 @@
 window.MKM_CONFIG = {
   googleForm: {
     // Адрес отправки: https://docs.google.com/forms/d/e/<ID формы>/formResponse
-    action: 'https://docs.google.com/forms/d/e/ЗАМЕНИТЬ_ID_ФОРМЫ/formResponse',
+    // Форма «Заявки»
+    action: 'https://docs.google.com/forms/d/e/1FAIpQLSc9hLLiBOX4JdQwQhmeOEvrzmuySOcN30o4uqVhzLRmNxn2GQ/formResponse',
     // Поле сайта → идентификатор вопроса в Google-форме (entry.123456789)
     fields: {
-      parentName: 'entry.0000000001', // Имя родителя
-      contact: 'entry.0000000002', // Телефон или Telegram
-      email: 'entry.0000000003', // Email
-      grade: 'entry.0000000004', // Класс ребёнка
-      level: 'entry.0000000005', // Интересующий уровень
-      goal: 'entry.0000000006', // Главная цель
-      schedule: 'entry.0000000007', // Удобное время
-      timezone: 'entry.0000000008', // Часовой пояс
-      comment: 'entry.0000000009', // Комментарий
-      consent: 'entry.0000000010', // Согласие на обработку данных
-      source: 'entry.0000000011', // Источник (UTM, заполняется автоматически)
+      parentName: 'entry.2093921877', // Имя родителя
+      contact: 'entry.928429130', // Телефон или Telegram
+      email: 'entry.423205885', // Email
+      grade: 'entry.134625774', // Класс ребёнка
+      level: 'entry.2130530700', // Интересующий уровень
+      goal: 'entry.349023953', // Главная цель
+      schedule: 'entry.1437386218', // Удобное время
+      timezone: 'entry.1896690859', // Часовой пояс
+      comment: 'entry.1674785312', // Комментарий
+      consent: 'entry.1823047937', // Согласие на обработку данных
+      source: 'entry.803253683', // Источник (UTM, заполняется автоматически)
     },
   },
 
