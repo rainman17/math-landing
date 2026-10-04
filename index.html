@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Как рождается алгебра — онлайн-курс для 6–8 классов</title>
+    <meta
+      name="description"
+      content="Онлайн-курс алгебры для 6–8 классов: от моделей и действий к выражениям, уравнениям и символической записи. Три уровня, группы 5–6 детей, проверка домашних заданий преподавателем. Олимпиадная траектория для 6–10 классов."
+    />
+    <meta name="theme-color" content="#fbf8f3" />
+    <!-- ЗАМЕНИТЬ example.ru на домен сайта (здесь, в robots.txt и sitemap.xml) -->
+    <link rel="canonical" href="https://example.ru/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="Мысли как математик" />
+    <meta property="og:title" content="Как рождается алгебра — онлайн-курс для 6–8 классов" />
+    <meta property="og:description" content="От моделей и действий к формулам и уравнениям. Три уровня, группы 5–6 детей, проверка ДЗ преподавателем." />
+    <meta property="og:url" content="https://example.ru/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/fonts/golos-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/config.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Course",
+            "name": "Как рождается алгебра",
+            "description": "Онлайн-курс алгебры для 6–8 классов: от моделей и действий к выражениям, уравнениям и символической записи.",
+            "inLanguage": "ru",
+            "provider": { "@type": "Organization", "name": "Мысли как математик" },
+            "hasCourseInstance": { "@type": "CourseInstance", "courseMode": "online", "courseWorkload": "PT1H" },
+            "offers": [
+              { "@type": "Offer", "category": "Старт в алгебре", "price": 13000, "priceCurrency": "RUB" },
+              { "@type": "Offer", "category": "Понимание школьной алгебры", "price": 16000, "priceCurrency": "RUB" },
+              { "@type": "Offer", "category": "Нестандартные задачи и олимпиадное мышление", "price": 24000, "priceCurrency": "RUB" }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="./" class="brand" aria-label="Мысли как математик — в начало">
+          <span class="brand-mark" aria-hidden="true">Σ</span>
+          <span class="brand-name">Мысли как математик</span>
+        </a>
+        <nav class="header-nav" aria-label="Разделы страницы">
+          <ul>
+            <li><a href="#method">Программа</a></li>
+            <li><a href="#levels">Уровни</a></li>
+            <li><a href="#format">Формат</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a class="header-contact" data-telegram data-track="contact_click" data-location="header" target="_blank" rel="noopener noreferrer" hidden>Написать</a>
+          <a href="#apply" class="btn btn-primary btn-sm header-cta" data-track="cta_click" data-location="header">Подобрать группу</a>
+          <button type="button" class="btn btn-ghost btn-sm mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-menu">Меню</button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="mobile-menu-panel" hidden>
+        <nav aria-label="Разделы страницы">
+          <ul>
+            <li><a href="#method">Программа</a></li>
+            <li><a href="#levels">Уровни</a></li>
+            <li><a href="#format">Формат</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+        <a href="#apply" class="btn btn-primary btn-block" data-track="cta_click" data-location="mobile_menu">Подобрать группу</a>
+        <a class="btn btn-secondary btn-block" data-telegram data-track="contact_click" data-location="mobile_menu" target="_blank" rel="noopener noreferrer" hidden>Написать в Telegram</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Первый экран -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Онлайн-курс алгебры · 6–8 класс</p>
+            <h1 id="hero-title" class="hero-title">Ребёнок понимает, откуда берётся алгебра — и начинает рассуждать, а не действовать по образцу</h1>
+            <p class="hero-subtitle">
+              Онлайн-курс для 6–8 классов: от исследования моделей и действий к выражениям, уравнениям и символической записи. Три уровня,
+              подбор группы вместе с преподавателем и небольшие группы. Олимпиадное направление подойдёт и ученикам 9–10 классов.
+            </p>
+            <div class="hero-actions">
+              <a href="#apply" class="btn btn-primary btn-lg" data-track="cta_click" data-location="hero">Подобрать группу</a>
+            </div>
+            <ul class="hero-facts">
+              <li>все занятия по 60 минут</li>
+              <li>8 недель или 3 месяца для олимпиадного модуля</li>
+              <li>проверка домашних заданий преподавателем</li>
+              <li>группы 5–6 детей</li>
+            </ul>
+          </div>
+
+          <figure class="workshop">
+            <figcaption class="workshop-head">
+              <span class="eyebrow">Математическая мастерская</span>
+              <span class="workshop-title">Одно правило — три представления</span>
+              <span class="workshop-text">Ребёнок замечает закономерность, строит модель и только потом записывает её буквами.</span>
+            </figcaption>
+            <div class="workshop-board" role="img" aria-label="Ряд 2, 4, 6, 8; модель — столбики из двух, четырёх, шести и восьми клеток; формула: n шагов — 2n плиток">
+              <div class="wk-row">
+                <span class="wk-label">ряд</span>
+                <div class="wk-cells">
+                  <span class="wk-cell">2</span><span class="wk-cell">4</span><span class="wk-cell">6</span><span class="wk-cell">8</span><span class="wk-cell wk-cell--next">?</span>
+                </div>
+              </div>
+              <div class="wk-row">
+                <span class="wk-label">модель</span>
+                <div class="wk-model" data-model="2,4,6,8"></div>
+              </div>
+              <div class="wk-row">
+                <span class="wk-label">формула</span>
+                <p class="wk-formula"><span class="math">n</span> шагов <span aria-hidden="true">→</span> <span class="math">2n</span> плиток</p>
+              </div>
+            </div>
+            <p class="wk-legend" aria-hidden="true">
+              <span>ряд</span><span class="wk-arrow">→</span><span>модель</span><span class="wk-arrow">→</span><span>формула</span>
+            </p>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Узнавание -->
+      <section id="problems" class="section" aria-labelledby="problems-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Знакомые ситуации</p>
+            <h2 id="problems-title" class="section-title">Узнаёте своего ребёнка?</h2>
+            <p class="section-intro">С этим к нам приходят чаще всего. Ни одна из ситуаций не про «неспособность» — это про то, как устроено понимание.</p>
+          </header>
+          <ul class="problem-grid">
+            <li class="problem-card">
+              <p class="problem-quote">«Решает по образцу, но не может объяснить»</p>
+              <p class="problem-text">Примеры из учебника получаются, а шаг в сторону — и непонятно, что делать.</p>
+            </li>
+            <li class="problem-card">
+              <p class="problem-quote">«Боится букв и знаков»</p>
+              <p class="problem-text">Пока задача в числах, всё хорошо. Появляется x — и кажется, что это какая-то другая математика.</p>
+            </li>
+            <li class="problem-card">
+              <p class="problem-quote">«Хочет задач сложнее школьных»</p>
+              <p class="problem-text">Школьная программа даётся легко, а настоящего интереса и вызова не хватает.</p>
+            </li>
+            <li class="problem-card">
+              <p class="problem-quote">«Скоро начнётся алгебра»</p>
+              <p class="problem-text">Хочется, чтобы старт был спокойным: понятные шаги, без спешки и страха ошибиться.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Методика -->
+      <section id="method" class="section section--alt" aria-labelledby="method-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Методика</p>
+            <h2 id="method-title" class="section-title">Как рождается понимание</h2>
+            <p class="section-intro">
+              Мы не начинаем с правил. Ребёнок проходит путь от действия к записи — так, как когда-то рождалась сама алгебра. Ниже одна задача на всех шести шагах.
+            </p>
+          </header>
+          <ol class="method-steps">
+            <li class="method-step">
+              <span class="method-num" aria-hidden="true">1</span>
+              <h3 class="method-title">Действие</h3>
+              <p class="method-text">Сначала ребёнок выполняет действие и замечает, что меняется.</p>
+              <p class="method-example">Выкладываем дорожку: на каждом шаге добавляем 2 плитки.</p>
+            </li>
+            <li class="method-step">
+              <span class="method-num" aria-hidden="true">2</span>
+              <h3 class="method-title">Модель</h3>
+              <p class="method-text">Затем мы представляем ситуацию с помощью фигур, схем, карточек или других моделей.</p>
+              <p class="method-example">Рисуем схему: шаг 1 — 2 плитки, шаг 2 — 4, шаг 3 — 6.</p>
+            </li>
+            <li class="method-step">
+              <span class="method-num" aria-hidden="true">3</span>
+              <h3 class="method-title">Смысл</h3>
+              <p class="method-text">Обсуждаем, что означает каждый элемент и почему способ работает.</p>
+              <p class="method-example">На каждом шаге по 2 плитки — значит, плиток вдвое больше, чем шагов.</p>
+            </li>
+            <li class="method-step">
+              <span class="method-num" aria-hidden="true">4</span>
+              <h3 class="method-title">Запись</h3>
+              <p class="method-text">Только после этого появляется символическая алгебраическая запись.</p>
+              <p class="method-example"><span class="math">n</span> шагов → <span class="math">2n</span> плиток. Буква <span class="math">n</span> — это «любое число шагов».</p>
+            </li>
+            <li class="method-step">
+              <span class="method-num" aria-hidden="true">5</span>
+              <h3 class="method-title">Обобщение</h3>
+              <p class="method-text">Ребёнок выделяет общий способ, а не запоминает один пример.</p>
+              <p class="method-example">Если добавлять по 3 плитки — будет <span class="math">3n</span>, по 5 — <span class="math">5n</span>.</p>
+            </li>
+            <li class="method-step">
+              <span class="method-num" aria-hidden="true">6</span>
+              <h3 class="method-title">Перенос</h3>
+              <p class="method-text">Пробует применить способ к новой задаче и объяснить решение.</p>
+              <p class="method-example">Забор: 3 доски на секцию и одна в конце. Сколько досок на <span class="math">n</span> секций? <span class="math">3n + 1</span></p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Уровни -->
+      <section id="levels" class="section" aria-labelledby="levels-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Уровни</p>
+            <h2 id="levels-title" class="section-title">Выбираем не «сильный / слабый», а следующий шаг</h2>
+            <p class="section-intro">Уровень подбираем вместе: учитываем цель семьи, класс и то, как ребёнок рассуждает. Окончательно его подтверждает преподаватель.</p>
+          </header>
+          <div class="level-grid">
+            <article class="level-card">
+              <div class="level-top"><span class="chip">Спокойный старт</span><span class="level-grades">6–8 класс</span></div>
+              <h3 class="level-title">Старт в алгебре</h3>
+              <dl class="level-details">
+                <div><dt>Кому подходит</dt><dd>Начинает алгебру или чувствует неуверенность с буквами, знаками и уравнениями.</dd></div>
+                <div><dt>На занятиях</dt><dd>Через действия и модели разбираемся, что такое переменная, выражение и равенство. Много обсуждения, без спешки.</dd></div>
+                <div><dt>Результат</dt><dd>Понимает смысл переменной, выражения, знака и простого уравнения.</dd></div>
+              </dl>
+              <div class="level-bottom">
+                <p class="level-meta">8 занятий × 60 мин · 8 недель</p>
+                <p class="level-price"><strong>13 000&nbsp;₽</strong> <span>за модуль</span></p>
+                <p class="status status--open">Набор открыт</p>
+                <a href="#apply" class="btn btn-block btn-secondary" data-level="Старт в алгебре" data-track="cta_click" data-location="levels">Подобрать группу</a>
+              </div>
+            </article>
+
+            <article class="level-card is-highlighted">
+              <div class="level-top"><span class="chip">Основной маршрут</span><span class="level-grades">6–8 класс</span></div>
+              <h3 class="level-title">Понимание школьной алгебры</h3>
+              <dl class="level-details">
+                <div><dt>Кому подходит</dt><dd>Знает правила, но часто решает по образцу и не может объяснить, почему так.</dd></div>
+                <div><dt>На занятиях</dt><dd>Связываем преобразования с моделями и смыслом: почему раскрываются скобки, откуда берутся формулы, как проверить решение.</dd></div>
+                <div><dt>Результат</dt><dd>Связывает преобразования со смыслом и объясняет ход решения.</dd></div>
+              </dl>
+              <div class="level-bottom">
+                <p class="level-meta">8 занятий × 60 мин · 8 недель</p>
+                <p class="level-price"><strong>16 000&nbsp;₽</strong> <span>за модуль</span></p>
+                <p class="status status--open">Набор открыт</p>
+                <a href="#apply" class="btn btn-block btn-primary" data-level="Понимание школьной алгебры" data-track="cta_click" data-location="levels">Подобрать группу</a>
+              </div>
+            </article>
+
+            <article class="level-card">
+              <div class="level-top"><span class="chip">Задачи и олимпиады</span><span class="level-grades">6–10 класс</span></div>
+              <h3 class="level-title">Нестандартные задачи и олимпиадное мышление</h3>
+              <dl class="level-details">
+                <div><dt>Кому подходит</dt><dd>Уверенно владеет базой и готов рассуждать, спорить и искать нестандартные ходы.</dd></div>
+                <div><dt>На занятиях</dt><dd>Решаем задачи без готового алгоритма: строим гипотезы, перебираем стратегии, доводим идею до строгого решения.</dd></div>
+                <div><dt>Результат</dt><dd>Ищет гипотезы, перебирает стратегии, объясняет и переносит способы.</dd></div>
+              </dl>
+              <div class="level-bottom">
+                <p class="level-meta">12 занятий × 60 мин · 3 месяца</p>
+                <p class="level-price"><strong>24 000&nbsp;₽</strong> <span>за модуль</span></p>
+                <p class="level-installment">Можно оплатить тремя платежами по 8 000&nbsp;₽</p>
+                <p class="status status--open">Набор открыт</p>
+                <a href="#apply" class="btn btn-block btn-secondary" data-level="Нестандартные задачи и олимпиадное мышление" data-track="cta_click" data-location="levels">Обсудить олимпиадную группу</a>
+              </div>
+            </article>
+          </div>
+          <ul class="level-notes">
+            <li>6 класс? Да, курс может подойти. Мы последовательно вводим понятия шаг за шагом и идём от простого к сложному.</li>
+            <li>9–10 класс? Олимпиадная траектория открыта и для вас — группу подбираем по уровню задач и цели, а не только по классу.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Формат -->
+      <section id="format" class="section section--alt" aria-labelledby="format-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Формат</p>
+            <h2 id="format-title" class="section-title">Как устроено обучение</h2>
+            <p class="section-intro">Онлайн, один раз в неделю, 60 минут. В группе 5–6 детей — достаточно, чтобы обсуждать решения, и достаточно мало, чтобы каждого услышать.</p>
+          </header>
+          <ul class="fact-chips">
+            <li class="chip chip--lg">Онлайн</li>
+            <li class="chip chip--lg">1 раз в неделю</li>
+            <li class="chip chip--lg">60 минут</li>
+            <li class="chip chip--lg">5–6 детей в группе</li>
+            <li class="chip chip--lg">ДЗ с проверкой</li>
+          </ul>
+          <ol class="timeline">
+            <li class="timeline-item"><span class="timeline-num" aria-hidden="true">1</span><div><h3 class="timeline-title">Занятие</h3><p class="timeline-text">60 минут онлайн раз в неделю. Решаем, обсуждаем, сравниваем способы.</p></div></li>
+            <li class="timeline-item"><span class="timeline-num" aria-hidden="true">2</span><div><h3 class="timeline-title">Домашнее задание</h3><p class="timeline-text">Несколько задач после занятия: закрепить способ и попробовать его на новой задаче.</p></div></li>
+            <li class="timeline-item"><span class="timeline-num" aria-hidden="true">3</span><div><h3 class="timeline-title">Проверка</h3><p class="timeline-text">Преподаватель сам проверяет работы: отмечает сильные стороны и то, где возникла трудность.</p></div></li>
+            <li class="timeline-item"><span class="timeline-num" aria-hidden="true">4</span><div><h3 class="timeline-title">Рекомендации</h3><p class="timeline-text">Короткий комментарий: что получилось, что потренировать и какой следующий шаг.</p></div></li>
+            <li class="timeline-item"><span class="timeline-num" aria-hidden="true">5</span><div><h3 class="timeline-title">Итог модуля</h3><p class="timeline-text">Общий комментарий о том, как изменилось понимание, и рекомендация, куда двигаться дальше.</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Преподаватель -->
+      <section id="teacher" class="section" aria-labelledby="teacher-title">
+        <div class="container teacher-grid">
+          <div class="teacher-photo">
+            <!-- ЗАМЕНИТЬ: <img src="assets/img/teacher.webp" alt="Имя Фамилия" width="640" height="800"> -->
+            <div class="teacher-placeholder" aria-hidden="true">ИФ</div>
+          </div>
+          <div class="teacher-copy">
+            <p class="eyebrow">Преподаватель</p>
+            <h2 id="teacher-title" class="section-title">Имя Фамилия [ЗАПОЛНИТЬ]</h2>
+            <p class="teacher-role">Инженер-математик, преподаватель математики и физики</p>
+            <p class="teacher-bio">
+              Ведёт математические кружки и олимпиадные направления. Автор предметно-модельного подхода: алгебра вводится через исследование моделей и смыслов, а не
+              через механическое запоминание правил. Лично ведёт занятия, проверяет домашние задания и формулирует рекомендации.
+            </p>
+            <ul class="check-list">
+              <li>Математические кружки и олимпиадные группы</li>
+              <li>Преподавание математики и физики</li>
+              <li>Автор предметно-модельного подхода</li>
+            </ul>
+            <blockquote class="teacher-quote">
+              <p>
+                Алгебра — это не набор правил, которые нужно запомнить, а язык, на котором удобно рассуждать. Когда ребёнок сам видит, откуда берётся формула, она перестаёт
+                быть страшной. [ЧЕРНОВИК — согласовать с преподавателем]
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- Персональный маршрут -->
+      <section id="personal-route" class="section section--accent" aria-labelledby="route-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Дополнительно к группе</p>
+            <h2 id="route-title" class="section-title">Персональный маршрут</h2>
+            <p class="section-intro">Ограниченное индивидуальное сопровождение внутри группового курса — не репетиторство. Подходит, если хочется больше внимания к целям и ошибкам ребёнка.</p>
+          </header>
+          <div class="compare">
+            <div class="compare-col">
+              <h3 class="compare-title">Входит в базовый тариф</h3>
+              <ul class="check-list">
+                <li>Проверка ДЗ и краткий комментарий</li>
+                <li>Дополнительная задача при необходимости</li>
+                <li>Общий итоговый комментарий</li>
+                <li>Ответы на вопросы в установленный срок</li>
+              </ul>
+            </div>
+            <div class="compare-col compare-col--plus">
+              <h3 class="compare-title">Добавляется в Персональный маршрут</h3>
+              <ul class="check-list check-list--plus">
+                <li>Две индивидуальные встречи по 30 минут за модуль</li>
+                <li>Персональная карта целей и точек роста</li>
+                <li>Более подробный разбор ошибок раз в две недели</li>
+                <li>Итоговая консультация для родителя</li>
+              </ul>
+            </div>
+          </div>
+          <div class="route-footer">
+            <dl class="route-prices">
+              <div><dt>Старт в алгебре</dt><dd>+8–10 тыс. ₽ за модуль</dd></div>
+              <div><dt>Понимание школьной алгебры</dt><dd>+10–12 тыс. ₽ за модуль</dd></div>
+              <div><dt>Нестандартные задачи и олимпиадное мышление</dt><dd>+12–15 тыс. ₽ за модуль</dd></div>
+            </dl>
+            <p class="route-limit">Не более 1–2 мест в группе — чтобы сохранить качество обычного формата.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Как попасть в группу -->
+      <section id="how-to-join" class="section section--alt" aria-labelledby="join-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Без сюрпризов</p>
+            <h2 id="join-title" class="section-title">Как попасть в группу</h2>
+            <p class="section-intro">Оплата появляется только после того, как вы согласились с уровнем, группой и расписанием.</p>
+          </header>
+          <ol class="join-steps">
+            <li class="join-step"><span class="join-num" aria-hidden="true">1</span><h3 class="join-title">Заявка</h3><p class="join-text">Пара минут: контакт, класс, цель и удобное время.</p></li>
+            <li class="join-step"><span class="join-num" aria-hidden="true">2</span><h3 class="join-title">Подбор уровня</h3><p class="join-text">Преподаватель смотрит цель и при необходимости предлагает короткое задание.</p></li>
+            <li class="join-step"><span class="join-num" aria-hidden="true">3</span><h3 class="join-title">Группа и расписание</h3><p class="join-text">Предлагаем группу, время, тариф и условия — до любой оплаты.</p></li>
+            <li class="join-step"><span class="join-num" aria-hidden="true">4</span><h3 class="join-title">Оплата</h3><p class="join-text">Полностью или частями, если такой вариант доступен для набора.</p></li>
+            <li class="join-step"><span class="join-num" aria-hidden="true">5</span><h3 class="join-title">Старт</h3><p class="join-text">Ссылка на занятие, правила связи и первое задание.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Доверие -->
+      <section id="trust" class="section" aria-labelledby="trust-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Честно о формате</p>
+            <h2 id="trust-title" class="section-title">Что важно знать до заявки</h2>
+          </header>
+          <ul class="trust-grid">
+            <li class="trust-card"><h3 class="trust-title">Цена видна заранее</h3><p class="trust-text">Полная стоимость, число занятий и длительность — до оплаты, без скрытых доплат.</p></li>
+            <li class="trust-card"><h3 class="trust-title">Заявка ни к чему не обязывает</h3><p class="trust-text">Сначала согласуем уровень и расписание, решение — за вами.</p></li>
+            <li class="trust-card"><h3 class="trust-title">Без громких обещаний</h3><p class="trust-text">Мы не обещаем оценку — мы развиваем понимание и умение объяснять решение.</p></li>
+            <li class="trust-card"><h3 class="trust-title">Прозрачные условия</h3><p class="trust-text">Правила пропусков, переносов и возврата — в оферте, их видно до оплаты.</p></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section section--alt" aria-labelledby="faq-title">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">FAQ</p>
+            <h2 id="faq-title" class="section-title">Частые вопросы</h2>
+          </header>
+          <div class="faq-list">
+            <details class="faq-item"><summary>Нужно ли уже уметь решать уравнения?</summary><p>Нет. Уровень определяется по цели ребёнка и короткому заданию, которое может предложить преподаватель.</p></details>
+            <details class="faq-item"><summary>Подойдёт ли курс для 6 класса?</summary><p>Да. Мы последовательно вводим понятия шаг за шагом и идём от простого к сложному. Уровень определяется не только классом, но и готовностью ребёнка.</p></details>
+            <details class="faq-item"><summary>Подойдёт ли олимпиадная математика ученику 9–10 класса?</summary><p>Да, если подходит уровень и цель. Олимпиадное направление не ограничено 7–8 классами; группа формируется по содержанию и способности рассуждать.</p></details>
+            <details class="faq-item"><summary>Можно ли выбрать уровень самостоятельно?</summary><p>Можно указать предположение, но окончательное распределение подтверждает преподаватель.</p></details>
+            <details class="faq-item"><summary>Что будет, если ребёнок пропустит занятие?</summary><p>Правила доступа к материалам и возможность восполнения указываются в оферте и сообщаются до оплаты.</p></details>
+            <details class="faq-item"><summary>Как проверяются домашние задания?</summary><p>Преподаватель проверяет работы, отмечает сильные стороны, затруднения и следующий шаг.</p></details>
+            <details class="faq-item"><summary>Будут ли индивидуальные занятия?</summary><p>В базовый тариф входит групповая работа. Для ограниченного числа детей доступен Персональный маршрут.</p></details>
+            <details class="faq-item"><summary>Сколько детей в группе?</summary><p>Обычно 5–6 детей. Это позволяет обсуждать решения и сохранять обратную связь.</p></details>
+            <details class="faq-item"><summary>Подойдёт ли курс, если оценки низкие?</summary><p>Да, если ребёнку подходит содержание и формат. Цель курса — понимание и самостоятельное рассуждение, а не обещание конкретной оценки.</p></details>
+            <details class="faq-item"><summary>Как проходят занятия?</summary><p>Онлайн, один раз в неделю, каждое занятие длится 60 минут; конкретная платформа и ссылка сообщаются после подтверждения группы.</p></details>
+            <details class="faq-item"><summary>Можно ли оплатить частями?</summary><p>Да, если такой вариант включён в выбранный набор; условия показываются до оплаты.</p></details>
+            <details class="faq-item"><summary>Можно ли вернуть оплату?</summary><p>Да, полный или частичный возврат рассматривается по правилам оферты. Запрос можно подать через согласованный канал; сумма и статус фиксируются отдельно.</p></details>
+            <details class="faq-item"><summary>Что делать, если подходящего времени нет?</summary><p>Оставить заявку и написать в комментарии удобные варианты — мы добавим вас в лист ожидания.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Заявка -->
+      <section id="apply" class="final-cta" aria-labelledby="apply-title">
+        <div class="container final-grid">
+          <div class="final-copy">
+            <h2 id="apply-title" class="section-title">Готовы понять, какой уровень подойдёт ребёнку?</h2>
+            <p class="final-text">Оставьте заявку — это пара минут. Преподаватель посмотрит цель и предложит уровень, группу и расписание. Оплата — только после того, как вы согласитесь.</p>
+            <ol class="final-steps">
+              <li>Преподаватель посмотрит заявку</li>
+              <li>Предложим уровень, группу и расписание</li>
+              <li>Вы решите, подходит ли</li>
+            </ol>
+            <p class="final-contact" data-telegram-block hidden>
+              Сначала хотите задать вопрос? <a data-telegram data-track="contact_click" data-location="apply" target="_blank" rel="noopener noreferrer">Напишите преподавателю</a>
+            </p>
+          </div>
+
+          <div class="final-form card">
+            <form id="lead-form" class="form" novalidate>
+              <div class="field">
+                <label for="parentName" class="field-label">Как к вам обращаться? <span class="field-required" aria-hidden="true">*</span></label>
+                <input id="parentName" name="parentName" class="input" autocomplete="given-name" maxlength="80" required />
+              </div>
+              <div class="field">
+                <label for="contact" class="field-label">Телефон или Telegram <span class="field-required" aria-hidden="true">*</span></label>
+                <input id="contact" name="contact" class="input" autocomplete="tel" maxlength="100" placeholder="+7 999 123-45-67 или @ник" required />
+              </div>
+              <div class="field">
+                <label for="email" class="field-label">Email <span class="field-required" aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" inputmode="email" class="input" autocomplete="email" maxlength="254" placeholder="name@mail.ru" required />
+              </div>
+
+              <fieldset id="grade" class="field choice-group" tabindex="-1">
+                <legend class="field-label">Класс ребёнка <span class="field-required" aria-hidden="true">*</span></legend>
+                <div class="choices choices--segmented">
+                  <label class="choice"><input type="radio" name="grade" value="6" /><span class="choice-label">6</span></label>
+                  <label class="choice"><input type="radio" name="grade" value="7" /><span class="choice-label">7</span></label>
+                  <label class="choice"><input type="radio" name="grade" value="8" /><span class="choice-label">8</span></label>
+                  <label class="choice"><input type="radio" name="grade" value="9" /><span class="choice-label">9</span></label>
+                  <label class="choice"><input type="radio" name="grade" value="10" /><span class="choice-label">10</span></label>
+                </div>
+              </fieldset>
+
+              <div class="field">
+                <label for="goal" class="field-label">Главная цель <span class="field-required" aria-hidden="true">*</span></label>
+                <select id="goal" name="goal" class="input select" required>
+                  <option value="" disabled selected>Выберите цель</option>
+                  <option>Спокойно начать алгебру</option>
+                  <option>Понять школьную алгебру</option>
+                  <option>Нестандартные задачи и олимпиады</option>
+                  <option>Повысить уверенность</option>
+                  <option>Другое — напишу в комментарии</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="level" class="field-label">Интересующий уровень <span class="field-optional">— необязательно</span></label>
+                <select id="level" name="level" class="input select">
+                  <option value="">Пока не знаю — подскажите</option>
+                  <option>Старт в алгебре</option>
+                  <option>Понимание школьной алгебры</option>
+                  <option>Нестандартные задачи и олимпиадное мышление</option>
+                </select>
+              </div>
+
+              <fieldset id="schedule" class="field choice-group" tabindex="-1">
+                <legend class="field-label">Когда удобно заниматься? <span class="field-optional">— можно несколько</span></legend>
+                <div class="choices choices--segmented choices--wrap">
+                  <label class="choice"><input type="checkbox" name="schedule" value="Будни после школы (15–18)" /><span class="choice-label">Будни 15–18</span></label>
+                  <label class="choice"><input type="checkbox" name="schedule" value="Будни вечером (18–21)" /><span class="choice-label">Будни 18–21</span></label>
+                  <label class="choice"><input type="checkbox" name="schedule" value="Выходные (10–15)" /><span class="choice-label">Выходные</span></label>
+                  <label class="choice"><input type="checkbox" name="schedule" value="Гибко" /><span class="choice-label">Гибко</span></label>
+                </div>
+              </fieldset>
+
+              <div class="field">
+                <label for="timezone" class="field-label">Часовой пояс</label>
+                <select id="timezone" name="timezone" class="input select">
+                  <option value="UTC+2">Калининград (UTC+2)</option>
+                  <option value="UTC+3" selected>Москва (UTC+3)</option>
+                  <option value="UTC+4">Самара (UTC+4)</option>
+                  <option value="UTC+5">Екатеринбург (UTC+5)</option>
+                  <option value="UTC+6">Омск (UTC+6)</option>
+                  <option value="UTC+7">Новосибирск, Красноярск (UTC+7)</option>
+                  <option value="UTC+8">Иркутск (UTC+8)</option>
+                  <option value="UTC+9">Якутск, Чита (UTC+9)</option>
+                  <option value="UTC+10">Владивосток, Хабаровск (UTC+10)</option>
+                  <option value="UTC+11">Магадан, Сахалин (UTC+11)</option>
+                  <option value="UTC+12">Камчатка (UTC+12)</option>
+                  <option value="другой">Другой часовой пояс</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="comment" class="field-label">Комментарий <span class="field-optional">— необязательно</span></label>
+                <textarea id="comment" name="comment" class="input textarea" rows="3" maxlength="1000" placeholder="Что сейчас трудно, какой результат хотите, какие дни точно не подходят"></textarea>
+              </div>
+
+              <div class="hp-field" aria-hidden="true">
+                <label for="website">Сайт</label>
+                <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <div class="field checkbox-field">
+                <input id="consent" name="consent" type="checkbox" required />
+                <label for="consent">Даю <a href="consent.html" target="_blank">согласие на обработку персональных данных</a> и принимаю <a href="privacy.html" target="_blank">политику их обработки</a></label>
+              </div>
+
+              <div class="form-alert form-alert--error" role="alert" hidden></div>
+
+              <button type="submit" class="btn btn-primary btn-lg btn-block">Отправить заявку</button>
+              <p class="form-note">Ответим <span data-response-time>в течение 1 рабочего дня</span>. Заявка ни к чему не обязывает.</p>
+            </form>
+
+            <div class="form-success" tabindex="-1" hidden>
+              <span class="success-icon" aria-hidden="true">✓</span>
+              <h3 class="success-title">Заявка получена</h3>
+              <p>Следующий шаг — подобрать уровень и расписание. Преподаватель посмотрит заявку и предложит уровень, группу, расписание и тариф. До оплаты мы всё подтвердим.</p>
+              <p><strong>Срок ответа:</strong> <span data-response-time>в течение 1 рабочего дня</span></p>
+              <div class="success-actions">
+                <a class="btn btn-primary" data-telegram data-track="contact_click" data-location="success" target="_blank" rel="noopener noreferrer" hidden>Написать в Telegram</a>
+                <button type="button" class="btn btn-secondary" data-new-lead>Отправить ещё одну заявку</button>
+              </div>
+            </div>
+            <noscript><p class="form-note">Для отправки заявки включите JavaScript в браузере.</p></noscript>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-title">Мысли как математик</p>
+          <p class="footer-text">Как рождается алгебра — онлайн-курс алгебры для 6–8 классов и олимпиадная траектория для 6–10 классов.</p>
+        </div>
+        <div>
+          <p class="footer-heading">Связаться</p>
+          <ul class="footer-list">
+            <li data-telegram-block hidden><a data-telegram data-track="contact_click" data-location="footer" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+            <li><a href="#apply">Оставить заявку</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Документы</p>
+          <ul class="footer-list">
+            <li><a href="privacy.html">Политика обработки персональных данных</a></li>
+            <li><a href="consent.html">Согласие на обработку данных</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span data-year>2026</span> Мысли как математик</p>
+        <!-- ЗАМЕНИТЬ: реквизиты исполнителя, например «ИП Иванова И. И., ИНН …» -->
+      </div>
+    </footer>
+
+    <div class="sticky-cta" aria-hidden="true">
+      <a href="#apply" class="btn btn-primary btn-block btn-lg" tabindex="-1" data-track="cta_click" data-location="sticky_mobile">Подобрать группу</a>
+    </div>
+  </body>
+</html>
