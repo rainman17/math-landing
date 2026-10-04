@@ -2,3 +2,11 @@ node_modules/
 test-results/
 playwright-report/
 .DS_Store
+
+# Локальные файлы полной версии (ветка main) — остаются в папке при переключении веток
+.env
+.env.*
+.next/
+next-env.d.ts
+*.tsbuildinfo
+media/
