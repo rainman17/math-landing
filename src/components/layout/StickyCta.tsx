@@ -15,15 +15,17 @@ export function StickyCta({ label }: { label: string }) {
   const [finalVisible, setFinalVisible] = useState(false)
 
   useEffect(() => {
-    const heroEnd = document.getElementById('hero-end')
+    // Следим за всем первым экраном, а не за точкой в его конце: при переходе по якорю
+    // или быстром скролле маленький маркер «перепрыгивает» экран, и наблюдатель не срабатывает.
+    const hero = document.querySelector('.hero')
     const finalCta = document.getElementById('final-cta')
     const observers: IntersectionObserver[] = []
 
-    if (heroEnd) {
+    if (hero) {
       const observer = new IntersectionObserver(([entry]) =>
         setPastHero(!entry.isIntersecting && entry.boundingClientRect.top < 0),
       )
-      observer.observe(heroEnd)
+      observer.observe(hero)
       observers.push(observer)
     }
     if (finalCta) {

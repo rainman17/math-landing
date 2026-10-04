@@ -79,7 +79,6 @@ export function Hero({ hero, showTestCta }: { hero: Landing['hero']; showTestCta
         </div>
         <HeroVisual visual={hero.visual} />
       </div>
-      <div id="hero-end" aria-hidden="true" />
     </section>
   )
 }
