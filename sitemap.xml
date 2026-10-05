@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- ЗАМЕНИТЬ example.ru на домен сайта. Юридические страницы добавить после согласования текстов. -->
+<!-- Юридические страницы добавить после согласования текстов. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://example.ru/</loc>
+    <loc>https://rainman17.github.io/math-landing/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>

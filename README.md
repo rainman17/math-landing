@@ -135,7 +135,9 @@ npm test
 
 Подходит любой статический хостинг: Яндекс Object Storage + CDN, Selectel, Netlify, GitHub Pages, обычный nginx. Выкладывать всю папку, кроме `node_modules`, `tests`, `scripts` и `docs`.
 
-`404.html` использует пути от корня сайта, поэтому сайт лучше размещать в корне домена, а не в подпапке.
+Сайт настроен для GitHub Pages: https://rainman17.github.io/math-landing/. В репозитории откройте **Settings → Pages**, выберите **Deploy from a branch**, ветку `main` и папку `/ (root)`.
+
+В `404.html` используются пути с префиксом `/math-landing/`, чтобы стили, иконка и ссылка на главную работали даже для вложенных несуществующих адресов. При смене домена или имени репозитория обновите эти пути и URL в `index.html`, `robots.txt` и `sitemap.xml`.
 
 ## Ограничения статической версии
 
